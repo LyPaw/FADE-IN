@@ -31,19 +31,25 @@
         {
           "src": "images/gallery/E1/E1-1.png",
           "alt": "Retrato bañado en luz neón cian y violeta con glitch analógico",
-          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "retrato", "cara", "rostro", "colores frios", "cian", "violeta"]
+          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "vhs", "retro", "experimental", "cinematic", "pelicula deteriorada", "aberracion cromatica", "retrato", "cara", "rostro", "colores frios", "cian", "violeta"]
         },
         {
           "src": "images/gallery/E1/E1-2.png",
           "alt": "Mariposa iluminada con neón ultravioleta y magenta, efecto glitch",
           "theme": "animales",
-          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "mariposa", "insecto", "naturaleza", "magenta"]
+          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "vhs", "retro", "experimental", "cinematic", "pelicula deteriorada", "aberracion cromatica", "mariposa", "insecto", "naturaleza", "magenta"]
         },
         {
           "src": "images/gallery/E1/E1-3.png",
           "alt": "Manos entrelazadas con luz neón fría y textura de impresión desgastada",
           "theme": "abstracto",
-          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "manos", "entrelazadas", "gesto", "ultravioleta"]
+          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "vhs", "retro", "experimental", "cinematic", "pelicula deteriorada", "aberracion cromatica", "manos", "entrelazadas", "gesto", "ultravioleta"]
+        },
+        {
+          "src": "images/gallery/E1/E1-4.png",
+          "alt": "Paisaje surrealista nocturno con montañas oscuras, un lago reflejando una enorme luna neón en tonos cian, violeta y magenta, con estética retro VHS, glitch analógico y textura de película deteriorada",
+          "theme": "paisaje",
+          "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "vhs", "retro", "experimental", "cinematic", "pelicula deteriorada", "aberracion cromatica", "paisaje", "surrealista", "nocturno", "montañas", "lago", "reflejo", "luna", "misterioso", "atmosferico", "etereo", "onirico", "estetica oscura", "cian", "violeta", "magenta"]
         }
       ]
     },
@@ -57,25 +63,37 @@
           "src": "images/gallery/E2/E2-1.png",
           "alt": "Retrato expresionista en técnica mixta sobre papel",
           "theme": "retrato",
-          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "retrato", "cara", "rostro", "humano"]
+          "tags": ["expresionismo", "pintura", "tecnica mixta", "papel", "papel envejecido", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "tonos terrosos", "tonos oxido", "organico", "atmosferico", "hecho a mano", "experimental", "retrato", "cara", "rostro", "humano"]
         },
         {
           "src": "images/gallery/E2/E2-2.png",
           "alt": "Lobo con pincelada expresionista y salpicaduras",
           "theme": "animales",
-          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "lobo", "animal", "naturaleza", "carnivoro"]
+          "tags": ["expresionismo", "pintura", "tecnica mixta", "papel", "papel envejecido", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "tonos terrosos", "tonos oxido", "organico", "atmosferico", "hecho a mano", "experimental", "lobo", "animal", "naturaleza", "carnivoro"]
         },
         {
           "src": "images/gallery/E2/E2-3.png",
           "alt": "Manos abstractas con trazos gestuales sobre papel",
           "theme": "abstracto",
-          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "manos", "abstracto", "gesto", "lineas"]
+          "tags": ["expresionismo", "pintura", "tecnica mixta", "papel", "papel envejecido", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "tonos terrosos", "tonos oxido", "organico", "atmosferico", "hecho a mano", "experimental", "manos", "abstracto", "gesto", "lineas"]
         },
         {
           "src": "images/gallery/E2/E2-4.png",
           "alt": "Paisaje expresionista en técnica mixta sobre papel",
           "theme": "paisaje",
-          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "paisaje", "campo", "horizonte"]
+          "tags": ["expresionismo", "pintura", "tecnica mixta", "papel", "papel envejecido", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "tonos terrosos", "tonos oxido", "organico", "atmosferico", "hecho a mano", "experimental", "paisaje", "campo", "horizonte"]
+        },
+        {
+          "src": "images/gallery/E2/E2-5.png",
+          "alt": "Pintura expresionista de arquitectura antigua en ruinas, con arcos y columnas de piedra, realizada con tinta, carbón y pigmentos terrosos sobre papel envejecido",
+          "theme": "arquitectura",
+          "tags": ["expresionismo", "pintura", "tecnica mixta", "papel", "papel envejecido", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "tonos terrosos", "tonos oxido", "organico", "atmosferico", "hecho a mano", "experimental", "arquitectura", "arquitectura de piedra", "ruinas", "arcos", "columnas", "arquitectura gotica"]
+        },
+        {
+          "src": "images/gallery/E2/E2-6.png",
+          "alt": "Pintura expresionista de ciencia ficción con una enorme ciudad espacial industrial y naves flotantes, realizada con tinta, carbón y pigmentos terrosos sobre papel envejecido",
+          "theme": "sci-fi",
+          "tags": ["expresionismo", "pintura", "tecnica mixta", "papel", "papel envejecido", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "tonos terrosos", "tonos oxido", "organico", "atmosferico", "hecho a mano", "experimental", "ciencia ficcion", "arquitectura futurista", "distopico", "ciudad espacial", "naves espaciales", "arquitectura industrial"]
         }
       ]
     }
