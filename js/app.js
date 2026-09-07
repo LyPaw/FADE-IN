@@ -110,12 +110,16 @@
     applyFilters();
   }
 
+  function imageTheme(prompt, image) {
+    return image.theme || prompt.theme;
+  }
+
   function applyFilters() {
     const q = searchQuery.toLowerCase().trim();
 
     filteredImages = allImages.filter(({ prompt, image }) => {
       const matchStyle = !activeStyle || prompt.style === activeStyle;
-      const matchTheme = !activeTheme || prompt.theme === activeTheme;
+      const matchTheme = !activeTheme || imageTheme(prompt, image) === activeTheme;
       if (!matchStyle || !matchTheme) return false;
 
       if (!q) return true;
@@ -124,6 +128,7 @@
       const promptText = (prompt.prompt || '').toLowerCase();
       const styleText = (prompt.style || '').toLowerCase();
       const themeText = (prompt.theme || '').toLowerCase();
+      const imageThemeText = (image.theme || '').toLowerCase();
       const altText = (image.alt || '').toLowerCase();
       const tagsText = (image.tags || []).join(' ').toLowerCase();
 
@@ -132,6 +137,7 @@
         promptText.includes(q) ||
         styleText.includes(q) ||
         themeText.includes(q) ||
+        imageThemeText.includes(q) ||
         altText.includes(q) ||
         tagsText.includes(q)
       );
@@ -245,7 +251,7 @@
 
     $modalTags.innerHTML = `
       <span class="modal__tag">${formatLabel(prompt.style)}</span>
-      <span class="modal__tag">${formatLabel(prompt.theme)}</span>
+      <span class="modal__tag">${formatLabel(imageTheme(prompt, img))}</span>
     `;
 
     $modalCounter.textContent = `${modalIndex + 1} / ${modalImages.length}`;
