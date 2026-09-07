@@ -1,0 +1,109 @@
+{
+  "styles": [
+    "neon-noir",
+    "oil-painting",
+    "surrealism",
+    "anime",
+    "realismo-cinematografico",
+    "fantasia-oscura",
+    "retro-futurismo",
+    "acuarela-onirica"
+  ],
+  "themes": [
+    "retrato",
+    "paisaje",
+    "abstracto",
+    "fantasia",
+    "sci-fi",
+    "naturaleza",
+    "arquitectura",
+    "animales"
+  ],
+  "prompts": [
+    {
+      "id": "neon-dreams",
+      "title": "Neon Dreams",
+      "style": "neon-noir",
+      "theme": "retrato",
+      "prompt": "cinematic portrait, neon lighting, rain reflections, cyberpunk aesthetic, film grain, 35mm, dramatic shadows, purple and blue tones",
+      "images": [
+        { "src": "gallery/neon-portrait-1.jpg", "alt": "Retrato neon con luz violeta" },
+        { "src": "gallery/neon-portrait-2.jpg", "alt": "Retrato neon callejero" }
+      ]
+    },
+    {
+      "id": "classical-oil",
+      "title": "Clásico al Óleo",
+      "style": "oil-painting",
+      "theme": "retrato",
+      "prompt": "classical oil painting, Renaissance style, chiaroscuro lighting, rich textures, warm earth tones, museum quality, detailed brushstrokes",
+      "images": [
+        { "src": "gallery/oil-classic-1.jpg", "alt": "Pintura al óleo clásica" }
+      ]
+    },
+    {
+      "id": "dreamscape",
+      "title": "Dreamscape",
+      "style": "surrealism",
+      "theme": "abstracto",
+      "prompt": "surrealist dreamscape, impossible architecture, floating elements, melting perspective, ethereal fog, golden hour lighting, Salvador Dali inspired",
+      "images": [
+        { "src": "gallery/surreal-dream-1.jpg", "alt": "Paisaje surrealista onírico" },
+        { "src": "gallery/surreal-dream-2.jpg", "alt": "Arquitectura imposible" },
+        { "src": "gallery/surreal-dream-3.jpg", "alt": "Mundos flotantes" }
+      ]
+    },
+    {
+      "id": "anime-storm",
+      "title": "Tormenta Anime",
+      "style": "anime",
+      "theme": "fantasia",
+      "prompt": "anime style, dramatic storm scene, lightning, dynamic composition, vibrant colors, studio ghibli inspired, detailed sky, emotional atmosphere",
+      "images": [
+        { "src": "gallery/anime-storm-1.jpg", "alt": "Escena de tormenta anime" }
+      ]
+    },
+    {
+      "id": "cinematic-real",
+      "title": "Realismo Cinematográfico",
+      "style": "realismo-cinematografico",
+      "theme": "retrato",
+      "prompt": "photorealistic cinematic still, anamorphic lens, shallow depth of field, film color grading, natural lighting, 8K detail, Hasselblad quality",
+      "images": [
+        { "src": "gallery/cinematic-real-1.jpg", "alt": "Retrato fotorrealista cinematográfico" },
+        { "src": "gallery/cinematic-real-2.jpg", "alt": "Escena urbana realista" }
+      ]
+    },
+    {
+      "id": "dark-fantasy",
+      "title": "Fantasía Oscura",
+      "style": "fantasia-oscura",
+      "theme": "fantasia",
+      "prompt": "dark fantasy art, gothic atmosphere, dramatic lighting, ancient ruins, mystical fog, intricate details, epic scale, concept art quality",
+      "images": [
+        { "src": "gallery/dark-fantasy-1.jpg", "alt": "Mundo de fantasía oscura" }
+      ]
+    },
+    {
+      "id": "retro-cyber",
+      "title": "Retro Cyber",
+      "style": "retro-futurismo",
+      "theme": "sci-fi",
+      "prompt": "retro-futurism, vintage sci-fi aesthetic, chrome surfaces, neon grids, synthwave colors, 80s inspired, VHS glow, retro technology",
+      "images": [
+        { "src": "gallery/retro-cyber-1.jpg", "alt": "Ciudad retro futurista" },
+        { "src": "gallery/retro-cyber-2.jpg", "alt": " Tecnología retro futurista" }
+      ]
+    },
+    {
+      "id": "watercolor-dream",
+      "title": "Acuarela Onírica",
+      "style": "acuarela-onirica",
+      "theme": "naturaleza",
+      "prompt": "ethereal watercolor painting, soft pastel tones, dreamy atmosphere, flowing organic shapes, delicate transparency, botanical illustration feel",
+      "images": [
+        { "src": "gallery/watercolor-1.jpg", "alt": "Naturaleza en acuarela" }
+      ]
+    }
+  ]
+}
