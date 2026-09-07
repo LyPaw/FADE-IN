@@ -1,117 +1,69 @@
-# LYPAW_ Prompt Gallery
+# FADE IN
 
-Galería web dinámica (estática) para mostrar prompts de arte generado con IA. Creada para ser alojada en **GitHub Pages** sin necesidad de base de datos ni servicios externos.
+> Galería de prompts para arte generado con Inteligencia Artificial.
+
+**FADE IN** es una web que funciona como un museo interactivo de obras creadas con IA. Cada obra expuesta puede copiarse: el visitante accede al **prompt de estilo** que la originó y puede reutilizarlo para crear la suya propia.
+
+## La idea
+
+En lugar de guardar prompts en un bloque de notas privado, la web los convierte en piezas expuestas. Cada prompt es un **estilo** reutilizable, no la receta de una imagen puntual: el mismo prompt puede adaptarse a cualquier sujeto que el visitante quiera generar. La galería intenta devolver a las personas que hacen arte con IA el control sobre sus técnicas, compartiéndolas como una expresión artística abierta.
 
 ## Estética
 
-- Tema **Cine Antiguo** (negro, rojo y dorado)
-- Tipografías: Playfair Display (títulos) + Inter (cuerpo)
-- Grid tipo Pinterest (masonry) responsive
-- Animaciones suaves de aparición al hacer scroll
-- Efecto de grano de película sobre toda la web
+- Tema **Cine Antiguo**: negro profundo, rojo cinematográfico y dorado envejecido.
+- Efecto de **grano de película** en toda la interfaz.
+- Grid tipo **Pinterest / masonry**, con animaciones suaves de aparición al hacer scroll.
+- Tipografías: **Playfair Display** (títulos) + **Inter** (cuerpo).
+
+## Tecnologías
+
+| Tecnología | Uso |
+|---|---|
+| **HTML5** | Estructura semántica de la página |
+| **CSS3** | Estilos, grid masonry y diseño responsive |
+| **JavaScript (vanilla ES6+)** | Lógica de la galería: renderizado, búsqueda, filtros, modal y portapapeles (`navigator.clipboard`) |
+| **JSON** | Fuente de datos local (obras y prompts) |
+| **GitHub Pages** | Alojamiento 100 % estático, sin backend ni bases de datos externas |
+
+Sin frameworks ni dependencias de terceros: solo HTML, CSS y JavaScript puro.
 
 ## Estructura
 
 ```
 ├── index.html          # Página principal
-├── css/style.css       # Estilos
-├── js/app.js           # Lógica (galería, filtros, modal, copiar)
-├── data/prompts.json   # ← Base de datos local (la editas vos)
-└── images/
-    ├── gallery/        # ← Tus imágenes van acá
-    └── assets/         # Recursos complementarios
+├── css/style.css       # Estilos y tema visual
+├── js/app.js           # Lógica de la aplicación
+├── data/prompts.json   # Datos: obras, prompts, estilos y temas
+├── images/
+│   ├── gallery/        # Imágenes de las obras
+│   └── assets/         # Recursos complementarios
+└── LICENSE             # Licencia del código (MIT)
 ```
 
-## Cómo publicar en GitHub Pages
+## Cómo funciona
 
-1. Creá un repositorio en GitHub (ej: `prompt-gallery`).
-2. Subí todo el contenido de este proyecto al repo.
-3. En GitHub: `Settings → Pages → Source: Deploy from a branch` y elegí `main` / `master`.
-4. Tu web quedará disponible en `https://tuusuario.github.io/prompt-gallery/`.
-5. Si es un repo de usuario (`tuusuario.github.io`), quedará en la raíz.
+1. La web carga `data/prompts.json` al entrar y construye la galería dinámicamente.
+2. El visitante puede buscar por texto o filtrar por **estilo** y **tema**.
+3. Al hacer clic en una obra se abre un modal con la imagen en grande y el prompt.
+4. Tras **Copiar Prompt**, el visitante obtiene el prompt de estilo acompañado de su crédito.
 
-## Cómo agregar una nueva obra
-
-### 1. Subí la imagen
-
-Colocá la imagen en la carpeta `images/gallery/`.
-
-> **Importante:** GitHub Pages es estático, no comprime imágenes. Para buena velocidad usá imágenes `.jpg` o `.webp` optimizadas (idealmente menos de ~500KB).
-
-### 2. Agregá la entrada en `data/prompts.json`
-
-Edita `data/prompts.json` y agregá un objeto al array `prompts`:
-
-```json
-{
-  "id": "mi-nuevo-estilo",
-  "title": "Nombre que se muestra",
-  "style": "nombre-estilo",       // ⇦ debe existir en el array "styles"
-  "theme": "nombre-tema",         // ⇦ debe existir en el array "themes"
-  "prompt": "el prompt de estilo aquí...",
-  "images": [
-    { "src": "gallery/mi-imagen-1.jpg", "alt": "Descripción 1" },
-    { "src": "gallery/mi-imagen-2.jpg", "alt": "Descripción 2" }
-  ]
-}
-```
-
-### 3. (Opcional) Agregá nuevas categorías
-
-Si trabajás con un estilo o tema nuevo, agregalo también a los arrays `styles` o `themes` al inicio del JSON.
-
-## Lista predefinida de Estilos y Temas
-
-Los valores de `style` y `theme` en cada prompt **deben pertenecer a estas listas**. Referite a las listas existentes cuando escribas un JSON.
-
-**Estilos disponibles:**
-```
-neon-noir          oil-painting
-surrealism         anime
-realismo-cinematografico
-fantasia-oscura    retro-futurismo
-acuarela-onirica
-```
-
-**Temas disponibles:**
-```
-retrato    paisaje    abstracto    fantasia
-sci-fi     naturaleza arquitectura animales
-```
-
-> Si agregás un estilo o tema nuevo, debe existir también en el array `styles` o `themes` al inicio de `data/prompts.json` para que aparezca en los filtros de la web.
-
-## Cómo funciona el prompt
-
-Los prompts son **de estilo**, no de imagen específica. Es decir, un mismo prompt puede servir para generar un perro, un gato, una persona, etc. El visitante copia el prompt de estilo y lo adapta a su sujeto. Al copiar se agrega automáticamente:
-
-```
-Creador del Prompt: @lypaw_
-```
-
-## Personalización
-
-- **Crédito**: el texto que se copia con el prompt está en `js/app.js`, en la constante `CREDIT`.
-- **Instagram**: buscá `lypaw_` en `index.html` para cambiar el link.
-- **Colores**: editá las variables CSS en `css/style.css` (sección `:root`).
+Cada obra pertenece a un estilo y a un tema, y un mismo prompt puede agrupar varias imágenes que lo comparten.
 
 ## Licencia
 
 ### Código (HTML, CSS, JavaScript) — Licencia MIT
 
-El código fuente de este sitio web (estructura, estilos y lógica) está bajo la **Licencia MIT**. Es libre y permisivo: cualquiera puede ver, usar, modificar y distribuir el código, con la única condición de incluir el aviso de copyright. El autor no asume responsabilidad legal alguna sobre el uso que se haga del código.
+El código fuente de este sitio está bajo la **Licencia MIT**: libre y permisivo, con la única condición de incluir el aviso de copyright. El autor no asume responsabilidad legal sobre el uso que se haga de él.
 
-Ver el archivo [`LICENSE`](LICENSE).
+Ver [`LICENSE`](LICENSE).
 
 ### Contenido (prompts e imágenes) — CC BY 4.0 (Atribución)
 
-Los prompts y las imágenes publicadas en esta galería son de libre uso bajo la licencia **Creative Commons Atribución 4.0 (CC BY 4.0)**, es decir, pueden copiarse, usarse y adaptarse siempre que se reconozca la autoría del creador.
-
-Todos los prompts y obras son de autoría del creador de la cuenta `@lypaw_`.
+Los prompts y las imágenes publicadas son de libre uso bajo **Creative Commons Atribución 4.0 (CC BY 4.0)**, siempre que se reconozca la autoría. Todos los prompts y obras son de autoría de `@lypaw_`.
 
 ### Derechos de imagen — Restricciones adicionales
 
-> **Importante:** Las imágenes que contengan el **rostro del creador/autor** conservan sus **derechos de imagen personal** de forma más estricta y **no** pueden utilizarse para:
+> Las imágenes que contengan el **rostro del creador/autor** conservan sus **derechos de imagen personal** de forma más estricta y **no** pueden utilizarse para:
 >
 > - Suplantación de identidad o imitación de la persona,
 > - Entrenamiento no autorizado de modelos con fines de imitación,
