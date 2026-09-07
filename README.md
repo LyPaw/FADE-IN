@@ -1,5 +1,9 @@
 # FADE IN
 
+<p align="center">
+  <img src="images/assets/logo.png" alt="FADE IN" width="180">
+</p>
+
 > Galería de prompts para arte generado con Inteligencia Artificial.
 
 **FADE IN** es una web que funciona como un museo interactivo de obras creadas con IA. Cada obra expuesta puede copiarse: el visitante accede al **prompt de estilo** que la originó y puede reutilizarlo para crear la suya propia.
