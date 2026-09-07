@@ -521,6 +521,7 @@ body {
 }
 
 .modal__prompt-box {
+  display: none;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius);

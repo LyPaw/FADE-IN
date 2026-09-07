@@ -8,7 +8,8 @@
   const CREDIT = 'Creador del Prompt: @lypaw_';
 
   let allPrompts = [];
-  let filteredPrompts = [];
+  let allImages = [];
+  let filteredImages = [];
   let activeStyle = null;
   let activeTheme = null;
   let searchQuery = '';
@@ -17,6 +18,7 @@
   let modalImages = [];
   let modalIndex = 0;
   let modalPromptRef = null;
+  let modalPromptText = '';
 
   // DOM refs
   const $gallery = document.getElementById('gallery');
@@ -43,7 +45,13 @@
       const res = await fetch('data/prompts.json');
       const data = await res.json();
       allPrompts = data.prompts;
-      filteredPrompts = [...allPrompts];
+      allImages = [];
+      allPrompts.forEach(p => {
+        p.images.forEach((img, idx) => {
+          allImages.push({ prompt: p, image: img, imgIdx: idx });
+        });
+      });
+      filteredImages = [...allImages];
 
       renderFilters(data.styles, data.themes);
       renderGallery();
@@ -105,15 +113,28 @@
   function applyFilters() {
     const q = searchQuery.toLowerCase().trim();
 
-    filteredPrompts = allPrompts.filter(p => {
-      const matchStyle = !activeStyle || p.style === activeStyle;
-      const matchTheme = !activeTheme || p.theme === activeTheme;
-      const matchSearch = !q ||
-        p.title.toLowerCase().includes(q) ||
-        p.prompt.toLowerCase().includes(q) ||
-        p.style.toLowerCase().includes(q) ||
-        p.theme.toLowerCase().includes(q);
-      return matchStyle && matchTheme && matchSearch;
+    filteredImages = allImages.filter(({ prompt, image }) => {
+      const matchStyle = !activeStyle || prompt.style === activeStyle;
+      const matchTheme = !activeTheme || prompt.theme === activeTheme;
+      if (!matchStyle || !matchTheme) return false;
+
+      if (!q) return true;
+
+      const titleText = (prompt.title || '').toLowerCase();
+      const promptText = (prompt.prompt || '').toLowerCase();
+      const styleText = (prompt.style || '').toLowerCase();
+      const themeText = (prompt.theme || '').toLowerCase();
+      const altText = (image.alt || '').toLowerCase();
+      const tagsText = (image.tags || []).join(' ').toLowerCase();
+
+      return (
+        titleText.includes(q) ||
+        promptText.includes(q) ||
+        styleText.includes(q) ||
+        themeText.includes(q) ||
+        altText.includes(q) ||
+        tagsText.includes(q)
+      );
     });
 
     renderGallery();
@@ -123,7 +144,7 @@
   function renderGallery() {
     $gallery.innerHTML = '';
 
-    if (filteredPrompts.length === 0) {
+    if (filteredImages.length === 0) {
       $galleryEmpty.style.display = 'block';
       $resultCount.textContent = '';
       return;
@@ -131,16 +152,15 @@
 
     $galleryEmpty.style.display = 'none';
 
-    let totalImages = 0;
-    filteredPrompts.forEach(p => {
-      p.images.forEach((img, idx) => {
-        totalImages++;
-        const item = createGalleryItem(p, img, idx);
-        $gallery.appendChild(item);
-      });
+    const totalImages = filteredImages.length;
+    const totalPrompts = new Set(filteredImages.map(x => x.prompt.id)).size;
+
+    filteredImages.forEach(item => {
+      const el = createGalleryItem(item.prompt, item.image, item.imgIdx);
+      $gallery.appendChild(el);
     });
 
-    $resultCount.textContent = `${totalImages} obra${totalImages !== 1 ? 's' : ''} · ${filteredPrompts.length} prompt${filteredPrompts.length !== 1 ? 's' : ''}`;
+    $resultCount.textContent = `${totalImages} obra${totalImages !== 1 ? 's' : ''} · ${totalPrompts} prompt${totalPrompts !== 1 ? 's' : ''}`;
 
     observeItems();
   }
@@ -151,6 +171,10 @@
     item.dataset.promptId = prompt.id;
     item.dataset.imgIdx = imgIdx;
 
+    const titleHtml = prompt.title
+      ? `<div class="gallery__item-title">${prompt.title}</div>`
+      : '';
+
     item.innerHTML = `
       <img
         class="gallery__item-img"
@@ -160,7 +184,7 @@
         onerror="this.parentElement.style.display='none'"
       >
       <div class="gallery__item-overlay">
-        <div class="gallery__item-title">${prompt.title}</div>
+        ${titleHtml}
         <div class="gallery__item-style">${formatLabel(prompt.style)}</div>
       </div>
     `;
@@ -188,22 +212,36 @@
   }
 
   // --- Modal ---
-  function openModal(prompt, imgIdx) {
+  async function openModal(prompt, imgIdx) {
     modalImages = prompt.images;
     modalIndex = imgIdx;
     modalPromptRef = prompt;
 
+    await loadPromptContent(prompt);
     updateModalContent(prompt);
     $modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+  }
+
+  async function loadPromptContent(prompt) {
+    if (prompt.promptFile) {
+      try {
+        const res = await fetch(prompt.promptFile);
+        if (!res.ok) throw new Error();
+        modalPromptText = await res.text();
+      } catch {
+        modalPromptText = prompt.prompt || '';
+      }
+    } else {
+      modalPromptText = prompt.prompt || '';
+    }
   }
 
   function updateModalContent(prompt) {
     const img = modalImages[modalIndex];
     $modalImage.src = img.src;
     $modalImage.alt = img.alt;
-    $modalTitle.textContent = prompt.title;
-    $modalPrompt.textContent = prompt.prompt;
+    $modalTitle.textContent = prompt.title || formatLabel(prompt.style);
 
     $modalTags.innerHTML = `
       <span class="modal__tag">${formatLabel(prompt.style)}</span>
@@ -222,9 +260,6 @@
       </svg>
       Copiar Prompt
     `;
-
-    // Store current prompt for copy
-    $modalCopy.dataset.prompt = prompt.prompt;
   }
 
   function closeModal() {
@@ -233,8 +268,8 @@
   }
 
   function copyPrompt() {
-    const prompt = $modalCopy.dataset.prompt;
-    const fullText = prompt + '\n\n' + CREDIT;
+    const promptText = modalPromptText;
+    const fullText = promptText ? promptText + '\n\n' + CREDIT : CREDIT;
 
     navigator.clipboard.writeText(fullText).then(() => {
       $modalCopy.classList.add('copied');
