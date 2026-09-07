@@ -35,13 +35,13 @@
         {
           "src": "images/gallery/E1/E1-2.png",
           "alt": "Mariposa iluminada con neón ultravioleta y magenta, efecto glitch",
-          "theme": "abstracto",
+          "theme": "animales",
           "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "mariposa", "insecto", "naturaleza", "magenta"]
         },
         {
           "src": "images/gallery/E1/E1-3.png",
           "alt": "Manos entrelazadas con luz neón fría y textura de impresión desgastada",
-          "theme": "animales",
+          "theme": "abstracto",
           "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "manos", "entrelazadas", "gesto", "ultravioleta"]
         }
       ]
