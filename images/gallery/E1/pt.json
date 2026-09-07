@@ -1,0 +1,341 @@
+{
+  "image_style": {
+    "name": "Dark Neon Glitch Psychedelic Editorial",
+    "style_category": [
+      "dark editorial photography",
+      "psychedelic photography",
+      "analog glitch art",
+      "experimental portraiture",
+      "underground album artwork",
+      "distressed print photography",
+      "cyberpunk-inspired fine art"
+    ],
+
+    "overall_aesthetic": {
+      "mood": [
+        "mysterious",
+        "dark",
+        "dreamlike",
+        "melancholic",
+        "surreal",
+        "ethereal",
+        "ominous",
+        "romantic",
+        "otherworldly"
+      ],
+      "visual_feeling": "A dark experimental photograph that looks like a damaged vintage print exposed to intense ultraviolet neon light, partially corrupted by analog video interference and psychedelic color separation.",
+      "visual_priority": [
+        "strong silhouette",
+        "deep black negative space",
+        "electric neon highlights",
+        "organic textures",
+        "analog imperfections",
+        "glitch deformation",
+        "high contrast",
+        "dramatic subject isolation"
+      ]
+    },
+
+    "composition": {
+      "composition_type": "editorial fine-art composition",
+      "subject_position": "dominant central or slightly off-center subject",
+      "framing": "tight or medium-tight framing with large areas of black negative space",
+      "depth": "shallow visual depth with the subject emerging dramatically from darkness",
+      "negative_space": "large pure-black or nearly-black empty areas surrounding the subject",
+      "visual_balance": "asymmetrical but intentional",
+      "cropping": "slightly unconventional artistic cropping",
+      "perspective": "natural photographic perspective with occasional surreal distortion",
+      "subject_separation": "extreme separation between luminous subject and black background",
+      "foreground": "textured organic elements may overlap the subject",
+      "background": "almost completely black, extremely dark and minimally detailed"
+    },
+
+    "background": {
+      "base_color": "#000000",
+      "appearance": "deep crushed black",
+      "details": [
+        "fine dust",
+        "analog film grain",
+        "tiny scratches",
+        "random white specks",
+        "subtle ultraviolet noise",
+        "faint distressed texture"
+      ],
+      "avoid": [
+        "clean digital gradient",
+        "bright background",
+        "studio backdrop",
+        "flat gray background",
+        "visible modern environment"
+      ]
+    },
+
+    "lighting": {
+      "type": "hard directional neon lighting",
+      "primary_light": {
+        "color": "electric cyan",
+        "temperature": "cool",
+        "intensity": "very high",
+        "direction": "side/front-side",
+        "quality": "hard and sharply defined"
+      },
+      "secondary_light": {
+        "color": "electric violet",
+        "temperature": "ultra cool",
+        "intensity": "high",
+        "direction": "opposite side or rim",
+        "quality": "hard rim lighting"
+      },
+      "accent_light": {
+        "color": "hot magenta",
+        "intensity": "high",
+        "purpose": "localized color accents and edge illumination"
+      },
+      "shadow_behavior": "extremely deep crushed shadows with almost no visible detail",
+      "highlight_behavior": "bright cyan and violet highlights approaching overexposure",
+      "rim_light": "strong ultraviolet rim lighting around selected contours",
+      "light_falloff": "very rapid falloff into pure black",
+      "dynamic_range": "extreme",
+      "contrast": "very high"
+    },
+
+    "color_grading": {
+      "palette": {
+        "black": "#000000",
+        "deep_black": "#030006",
+        "electric_cyan": "#00EFFF",
+        "bright_cyan": "#43F6FF",
+        "electric_blue": "#174DFF",
+        "ultraviolet": "#6A00FF",
+        "deep_violet": "#31005F",
+        "neon_purple": "#8A00FF",
+        "hot_magenta": "#FF00D9",
+        "deep_magenta": "#71005F",
+        "occasional_white": "#F5FFFF"
+      },
+      "dominant_colors": [
+        "black",
+        "electric cyan",
+        "ultraviolet blue",
+        "deep violet",
+        "neon magenta"
+      ],
+      "saturation": "extremely high",
+      "contrast": "extremely high",
+      "black_level": "crushed",
+      "white_level": "slightly clipped",
+      "midtones": "heavily tinted cyan, violet and magenta",
+      "color_separation": "strong RGB/CMYK-style channel separation",
+      "gradient_behavior": "irregular organic transitions rather than smooth digital gradients",
+      "color_bleeding": "strong",
+      "chromatic_aberration": "visible but artistic",
+      "color_shift": "cyan-to-violet and violet-to-magenta transitions",
+      "skin_treatment": "skin or organic surfaces are transformed into luminous cyan, blue, violet and magenta rather than natural skin tones"
+    },
+
+    "texture": {
+      "overall_texture": "heavily distressed analog photographic print",
+      "film_grain": {
+        "enabled": true,
+        "amount": "very high",
+        "size": "fine-to-medium",
+        "distribution": "irregular",
+        "appearance": "visible monochromatic and colored grain"
+      },
+      "surface_noise": "heavy",
+      "dust": "abundant",
+      "scratches": "random fine scratches and vertical imperfections",
+      "film_damage": "moderate-to-heavy",
+      "paper_texture": "subtle rough printed-paper texture",
+      "ink_texture": "uneven ink deposition",
+      "halftone": "subtle-to-moderate",
+      "print_decay": "visible",
+      "edge_damage": "occasional distressed borders and worn edges",
+      "imperfection_level": "very high"
+    },
+
+    "glitch_effects": {
+      "style": "analog psychedelic glitch",
+      "intensity": "medium-to-high",
+      "horizontal_displacement": {
+        "enabled": true,
+        "intensity": "medium-to-high",
+        "appearance": "horizontal smearing and fragmented displacement"
+      },
+      "scanline_distortion": "subtle",
+      "rgb_shift": "strong",
+      "channel_offset": "cyan/magenta/blue separation",
+      "image_tearing": "occasional",
+      "digital_corruption": "minimal",
+      "analog_corruption": "strong",
+      "motion_smearing": "localized",
+      "ghosting": "subtle-to-moderate",
+      "fragmentation": "organic and irregular",
+      "glitch_distribution": "localized around selected portions of the subject rather than uniformly applied",
+      "important_rule": "the original silhouette and recognizable structure of the subject remain intact despite the distortion"
+    },
+
+    "subject_rendering": {
+      "detail": "very high",
+      "sharpness": "high in illuminated areas",
+      "shadow_detail": "minimal",
+      "surface_detail": "extremely pronounced",
+      "microcontrast": "very high",
+      "edge_definition": "strong but partially degraded by glitch effects",
+      "material_response": "highly tactile",
+      "organic_forms": "emphasized",
+      "fine_details": "enhanced through grain, contrast and color separation"
+    },
+
+    "photographic_character": {
+      "camera_feel": "high-end analog editorial photography",
+      "lens_character": "cinematic portrait lens",
+      "depth_of_field": "shallow-to-medium",
+      "focus": "subject-focused",
+      "exposure": "dramatic underexposed environment with selectively overexposed highlights",
+      "sharpness": "high subject sharpness combined with analog softness",
+      "bokeh": "minimal",
+      "motion": "mostly frozen subject with localized artificial motion trails",
+      "photorealism": "high",
+      "post_processing": "extreme artistic analog processing"
+    },
+
+    "distortion": {
+      "type": [
+        "horizontal smear",
+        "chromatic displacement",
+        "analog tearing",
+        "ghost trails",
+        "localized pixel displacement"
+      ],
+      "strength": "medium",
+      "preserve_subject_identity": true,
+      "preserve_anatomical_structure": true,
+      "preserve_primary_silhouette": true,
+      "avoid_total_destruction": true
+    },
+
+    "atmosphere": {
+      "particles": [
+        "fine dust",
+        "film particles",
+        "tiny luminous specks",
+        "floating debris",
+        "subtle colored particles"
+      ],
+      "fog": "very subtle",
+      "smoke": "optional and extremely subtle",
+      "ambient_light": "almost nonexistent",
+      "environmental_feeling": "void-like darkness"
+    },
+
+    "surface_effects": {
+      "ink_bleeding": true,
+      "color_bleeding": true,
+      "film_grain": true,
+      "dust": true,
+      "scratches": true,
+      "print_noise": true,
+      "halftone_noise": true,
+      "chromatic_aberration": true,
+      "vignette": "subtle-to-medium",
+      "lens_flare": "minimal",
+      "bloom": "localized around extreme neon highlights",
+      "overexposure": "localized",
+      "underexposure": "dominant"
+    },
+
+    "edge_treatment": {
+      "edges": "distressed photographic edges",
+      "border": "optional thin damaged film border",
+      "corner_behavior": "darkened and slightly degraded",
+      "edge_noise": "high",
+      "clean_digital_edges": false
+    },
+
+    "psychadelic_character": {
+      "intensity": "medium-high",
+      "visual_language": [
+        "ultraviolet",
+        "dreamlike",
+        "surreal",
+        "organic",
+        "cosmic",
+        "experimental",
+        "dark romanticism"
+      ],
+      "deformation": "controlled",
+      "symmetry": "natural subject symmetry should remain believable",
+      "color_psychology": "cold cyan contrasted against aggressive violet and magenta"
+    },
+
+    "reference_behavior": {
+      "match_style_not_content": true,
+      "preserve_subject_from_input": true,
+      "do_not_copy_reference_subject": true,
+      "style_transfer_strength": "high",
+      "composition_transfer": "low-to-medium",
+      "color_transfer": "very high",
+      "texture_transfer": "very high",
+      "lighting_transfer": "very high",
+      "glitch_transfer": "high"
+    },
+
+    "quality": {
+      "resolution": "ultra high",
+      "detail_level": "extreme",
+      "texture_resolution": "high",
+      "photographic_detail": "high",
+      "fine_grain_resolution": "high",
+      "avoid_ai_artifacts": true,
+      "avoid_plastic_surfaces": true,
+      "avoid_clean_cgi": true,
+      "avoid_excessive_smoothing": true
+    }
+  },
+
+  "negative_prompt": [
+    "clean digital photography",
+    "modern commercial photography",
+    "bright background",
+    "white background",
+    "pastel colors",
+    "warm orange lighting",
+    "natural color palette",
+    "low contrast",
+    "flat lighting",
+    "soft studio lighting",
+    "clean gradients",
+    "minimalist design",
+    "smooth skin",
+    "plastic skin",
+    "CGI appearance",
+    "3D render",
+    "cartoon",
+    "anime",
+    "vector art",
+    "low detail",
+    "low texture",
+    "excessive sharpening",
+    "excessive blur",
+    "uniform glitch",
+    "complete subject destruction",
+    "unrecognizable anatomy",
+    "random duplicated limbs",
+    "deformed hands",
+    "extra fingers",
+    "extra eyes",
+    "unnatural anatomy",
+    "generic cyberpunk city",
+    "neon city background",
+    "lens flare overload",
+    "rainbow colors",
+    "green neon",
+    "orange neon",
+    "yellow neon",
+    "clean edges",
+    "perfectly pristine image"
+  ],
+
+  "style_prompt": "Dark experimental editorial photography, deep black negative space, electric cyan and ultraviolet illumination, intense neon magenta accents, extreme high contrast, crushed blacks, selectively overexposed highlights, heavily distressed analog film texture, aggressive fine grain, dust, scratches, worn print surface, subtle halftone texture, chromatic aberration, cyan-magenta channel separation, localized horizontal analog glitch displacement, psychedelic color bleeding, ghost trails, fragmented photographic textures, ultraviolet atmosphere, surreal dark romantic mood, tactile organic detail, high subject sharpness combined with analog softness, underground album-cover aesthetic, experimental fine-art photography, imperfect vintage photographic print, dramatic subject isolation, photorealistic subject rendered through extreme cyan-violet-magenta analog processing."
+}
