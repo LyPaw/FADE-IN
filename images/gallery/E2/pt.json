@@ -1,0 +1,414 @@
+{
+  "imagen": {
+    "tipo": "obra de arte figurativa expresionista de técnica mixta",
+    "medio_principal": [
+      "pintura tradicional sobre papel",
+      "técnica mixta",
+      "dibujo gestual",
+      "pintura expresionista",
+      "fine art experimental"
+    ],
+
+    "orientacion": "vertical",
+    "proporcion": "aproximadamente 2:3",
+
+    "estilo": {
+      "categoria": [
+        "figurative expressionism",
+        "gestural painting",
+        "contemporary fine art",
+        "experimental portraiture",
+        "raw figurative art",
+        "dark fine art",
+        "traditional mixed media"
+      ],
+
+      "caracteristicas_principales": [
+        "figuración reconocible pero parcialmente descompuesta",
+        "anatomía realista combinada con pincelada expresionista",
+        "apariencia artesanal y física",
+        "trazos espontáneos e imperfectos",
+        "sensación de obra pintada directamente a mano",
+        "fusión entre dibujo y pintura",
+        "contornos parcialmente definidos",
+        "zonas deliberadamente inacabadas",
+        "superposición de capas pictóricas",
+        "contraste entre precisión anatómica y caos gestual",
+        "expresividad contenida",
+        "estética cruda y orgánica",
+        "ausencia de acabado digital perfecto"
+      ],
+
+      "influencias_visuales": [
+        "expresionismo figurativo contemporáneo",
+        "pintura gestual",
+        "action painting",
+        "dibujo anatómico tradicional",
+        "boceto artístico",
+        "pintura de estudio",
+        "ilustración anatómica experimental",
+        "fine art europeo contemporáneo"
+      ]
+    },
+
+    "tecnica": {
+      "base": [
+        "papel artístico de algodón",
+        "papel de acuarela de grano fino a medio",
+        "superficie absorbente",
+        "textura física visible"
+      ],
+
+      "capas": [
+        "grafito",
+        "carbón",
+        "tinta negra",
+        "acuarela muy diluida",
+        "pigmentos terrosos",
+        "pintura de consistencia media",
+        "lavados translúcidos",
+        "pincel seco",
+        "manchas pigmentarias",
+        "salpicaduras líquidas"
+      ],
+
+      "aplicacion": [
+        "pinceladas largas y gestuales",
+        "pinceladas secas",
+        "trazos rápidos e irregulares",
+        "líneas de dibujo superpuestas",
+        "manchas semitransparentes",
+        "capas parcialmente transparentes",
+        "arrastres de pigmento",
+        "raspados visuales",
+        "bordes difuminados",
+        "bordes abruptos",
+        "pequeñas acumulaciones de pigmento",
+        "salpicaduras accidentales controladas"
+      ],
+
+      "acabado": [
+        "rough brushwork",
+        "visible brush strokes",
+        "dry brush texture",
+        "charcoal-like marks",
+        "ink splatter",
+        "pigment dispersion",
+        "imperfect handmade surface",
+        "visible paper grain"
+      ]
+    },
+
+    "dibujo": {
+      "linea": [
+        "líneas finas de grafito",
+        "líneas negras gestuales",
+        "contornos incompletos",
+        "líneas nerviosas",
+        "trazos cruzados",
+        "líneas anatómicas parcialmente visibles",
+        "rayas espontáneas alrededor de la figura"
+      ],
+
+      "densidad": "alta alrededor de las zonas importantes de la figura y progresivamente más dispersa hacia el exterior",
+
+      "tratamiento_contorno": "el contorno nunca debe parecer perfectamente limpio; debe mezclarse parcialmente con pinceladas, manchas y líneas de boceto",
+
+      "cross_hatching": "sutil y orgánico, integrado dentro de las sombras",
+
+      "precision": "anatómicamente convincente pero deliberadamente imperfecta en el acabado"
+    },
+
+    "pincelada": {
+      "caracter": [
+        "agresiva",
+        "gestual",
+        "orgánica",
+        "irregular",
+        "espontánea",
+        "expresiva",
+        "seca en algunas zonas",
+        "cargada de pigmento en otras"
+      ],
+
+      "direccion": [
+        "diagonales",
+        "curvas siguiendo la anatomía",
+        "trazos verticales ocasionales",
+        "movimientos rápidos alrededor de la silueta",
+        "pinceladas que se escapan del sujeto"
+      ],
+
+      "variacion": "muy alta",
+      "evitar_uniformidad": true,
+      "evitar_pincelada_digital": true
+    },
+
+    "paleta": {
+      "dominante": [
+        "marfil envejecido",
+        "beige cálido",
+        "ocre apagado",
+        "gris piedra",
+        "gris cálido",
+        "marrón tierra",
+        "marrón oscuro",
+        "negro carbón"
+      ],
+
+      "acentos": [
+        "óxido",
+        "terracota",
+        "rojo quemado",
+        "rojo sangre muy desaturado",
+        "siena tostada"
+      ],
+
+      "saturacion": "baja a media",
+      "contraste": "medio-alto",
+      "temperatura": "cálida y terrosa",
+
+      "regla_color": "los tonos rojizos y marrones deben aparecer como pigmento irregular integrado en la obra, nunca como colores digitales planos",
+
+      "negros": "negros carbón ligeramente transparentes, nunca negro digital puro uniforme",
+
+      "blancos": "marfil del papel visible, evitando blancos digitales puros"
+    },
+
+    "papel": {
+      "color": "marfil cálido envejecido",
+      "textura": "papel artístico ligeramente rugoso",
+      "grano": "fino pero claramente visible",
+      "fibra": "sutilmente perceptible",
+      "imperfecciones": [
+        "variaciones tonales",
+        "pequeñas manchas",
+        "zonas de pigmentación irregular",
+        "marcas de absorción",
+        "ligeras irregularidades del papel"
+      ],
+
+      "estado": "papel antiguo de estudio artístico ligeramente envejecido",
+
+      "importante": "el fondo debe parecer realmente papel físico y no una textura digital añadida"
+    },
+
+    "fondo": {
+      "tipo": "papel artístico prácticamente vacío",
+      "color_base": "marfil beige muy claro",
+      "detalle": "textura de papel visible",
+
+      "elementos": [
+        "salpicaduras de tinta",
+        "pequeñas manchas de pigmento",
+        "trazos aislados",
+        "líneas gestuales dispersas",
+        "manchas acuosas muy suaves"
+      ],
+
+      "distribucion": "irregular y orgánica, concentrándose alrededor de la figura pero dejando amplias zonas de papel limpio",
+
+      "profundidad": "plana, sin escenario reconocible",
+
+      "evitar": [
+        "fondos fotográficos",
+        "paisajes",
+        "habitaciones",
+        "gradientes digitales",
+        "texturas 3D",
+        "fondos completamente negros"
+      ]
+    },
+
+    "salpicaduras": {
+      "importancia": "alta",
+
+      "tipo": [
+        "ink splatter",
+        "paint splatter",
+        "dry pigment marks",
+        "thin accidental strokes",
+        "liquid pigment drops"
+      ],
+
+      "colores": [
+        "negro carbón",
+        "marrón oscuro",
+        "óxido",
+        "rojo quemado",
+        "gris",
+        "beige"
+      ],
+
+      "comportamiento": "caótico pero visualmente equilibrado",
+
+      "direccion": "principalmente alrededor y atravesando parcialmente la figura",
+
+      "escala": [
+        "microgotas",
+        "gotas medianas",
+        "salpicaduras alargadas",
+        "finísimas líneas proyectadas"
+      ],
+
+      "restriccion": "las salpicaduras deben parecer consecuencia física del proceso de pintura, no un efecto gráfico superpuesto"
+    },
+
+    "figura": {
+      "tratamiento": "realista en estructura pero expresionista en ejecución",
+
+      "anatomia": {
+        "nivel_de_detalle": "alto",
+        "precision": "anatómicamente convincente",
+        "deformacion": "mínima y deliberadamente artística",
+        "volumen": "construido mediante capas de pigmento, líneas y sombras"
+      },
+
+      "integracion": "la figura debe emerger progresivamente del papel, sin una separación limpia entre sujeto y fondo",
+
+      "bordes": "algunos bordes nítidos en las zonas focales y otros completamente disueltos en manchas y trazos",
+
+      "zonas_focales": "mayor definición, contraste y densidad de pincelada",
+
+      "zonas_secundarias": "más abstractas, fragmentadas y transparentes"
+    },
+
+    "luz": {
+      "tipo": "luz pictórica interna",
+      "direccion": "suave y difusa",
+      "contraste": "medio-alto",
+      "sombras": "profundas pero transparentes",
+      "altas_luces": "provienen parcialmente del papel sin pintar",
+
+      "evitar": [
+        "iluminación fotográfica evidente",
+        "brillos especulares digitales",
+        "HDR",
+        "iluminación cinematográfica moderna"
+      ]
+    },
+
+    "profundidad": {
+      "metodo": [
+        "superposición de pigmentos",
+        "variación de opacidad",
+        "densidad de línea",
+        "contraste",
+        "pérdida progresiva de detalle"
+      ],
+
+      "resultado": "sensación de volumen pictórico sin convertirse en una fotografía"
+    },
+
+    "textura": {
+      "nivel": "muy alto",
+
+      "componentes": [
+        "grano del papel",
+        "fibra del papel",
+        "pigmento seco",
+        "pincel seco",
+        "carbón",
+        "grafito",
+        "tinta absorbida",
+        "pequeñas manchas",
+        "superposición de trazos"
+      ],
+
+      "objetivo": "que al ampliar la imagen se perciba la materialidad física de la obra"
+    },
+
+    "composicion": {
+      "principio": "figura dominante rodeada por espacio negativo",
+
+      "equilibrio": "asimétrico y orgánico",
+
+      "espacio_negativo": "importante, especialmente en los márgenes",
+
+      "encuadre": "artístico y ligeramente impredecible",
+
+      "sujeto": "puede ocupar gran parte del lienzo pero nunca debe parecer recortado digitalmente",
+
+      "regla": "permitir que algunas pinceladas y salpicaduras sobrepasen visualmente los límites de la figura"
+    },
+
+    "atmosfera": {
+      "sensacion": [
+        "melancólica",
+        "introspectiva",
+        "cruda",
+        "dramática",
+        "orgánica",
+        "ancestral",
+        "frágil",
+        "humana",
+        "misteriosa"
+      ],
+
+      "emocion": "intensidad silenciosa",
+
+      "evitar": [
+        "terror explícito",
+        "gore",
+        "fantasía brillante",
+        "estética digital",
+        "aspecto de cómic",
+        "acabado pulido"
+      ]
+    },
+
+    "postprocesado": {
+      "grano": "grano fotográfico muy sutil integrado con la textura del papel",
+      "nitidez": "moderada-alta en las pinceladas principales",
+      "claridad": "media",
+      "contraste": "medio-alto",
+      "saturacion": "ligeramente reducida",
+      "viñeta": "mínima o inexistente",
+
+      "regla_principal": "no debe parecer una fotografía con un filtro de pintura; debe parecer una pintura física fotografiada o escaneada con gran fidelidad"
+    },
+
+    "calidad": {
+      "nivel_detalle": "muy alto",
+      "microtextura": "muy alta",
+      "detalle_anatomico": "alto",
+      "detalle_pictorico": "extremo",
+      "consistencia_material": "alta"
+    },
+
+    "negative_prompt": [
+      "digital painting",
+      "3D render",
+      "CGI",
+      "smooth digital gradients",
+      "plastic skin",
+      "airbrush",
+      "photorealistic photography",
+      "hyperrealistic photo",
+      "clean vector art",
+      "anime",
+      "cartoon",
+      "comic book",
+      "concept art digital",
+      "neon colors",
+      "high saturation",
+      "glossy finish",
+      "perfect clean outlines",
+      "uniform brush strokes",
+      "synthetic texture",
+      "digital grunge overlay",
+      "generic watercolor filter",
+      "generic oil painting filter",
+      "excessive blur",
+      "HDR",
+      "lens flare",
+      "cinematic color grading",
+      "3D lighting",
+      "perfect symmetry",
+      "sterile background",
+      "flat beige background",
+      "plastic texture",
+      "AI-looking details"
+    ]
+  }
+}

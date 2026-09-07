@@ -51,6 +51,7 @@
           allImages.push({ prompt: p, image: img, imgIdx: idx });
         });
       });
+      shuffle(allImages);
       filteredImages = [...allImages];
 
       renderFilters(data.styles, data.themes);
@@ -357,6 +358,13 @@
   // --- Utils ---
   function formatLabel(str) {
     return str.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
   }
 
   // Start

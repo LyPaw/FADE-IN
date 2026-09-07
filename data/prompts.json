@@ -8,7 +8,8 @@
     "fantasia-oscura",
     "retro-futurismo",
     "acuarela-onirica",
-    "glitch"
+    "glitch",
+    "expresionismo"
   ],
   "themes": [
     "retrato",
@@ -43,6 +44,38 @@
           "alt": "Manos entrelazadas con luz neón fría y textura de impresión desgastada",
           "theme": "abstracto",
           "tags": ["neon", "glitch", "psicodelico", "oscuro", "editorial", "fotografia", "analogico", "grano", "manos", "entrelazadas", "gesto", "ultravioleta"]
+        }
+      ]
+    },
+    {
+      "id": "expresionista-e2",
+      "style": "expresionismo",
+      "theme": "retrato",
+      "promptFile": "images/gallery/E2/pt.json",
+      "images": [
+        {
+          "src": "images/gallery/E2/E2-1.png",
+          "alt": "Retrato expresionista en técnica mixta sobre papel",
+          "theme": "retrato",
+          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "retrato", "cara", "rostro", "humano"]
+        },
+        {
+          "src": "images/gallery/E2/E2-2.png",
+          "alt": "Lobo con pincelada expresionista y salpicaduras",
+          "theme": "animales",
+          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "lobo", "animal", "naturaleza", "carnivoro"]
+        },
+        {
+          "src": "images/gallery/E2/E2-3.png",
+          "alt": "Manos abstractas con trazos gestuales sobre papel",
+          "theme": "abstracto",
+          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "manos", "abstracto", "gesto", "lineas"]
+        },
+        {
+          "src": "images/gallery/E2/E2-4.png",
+          "alt": "Paisaje expresionista en técnica mixta sobre papel",
+          "theme": "paisaje",
+          "tags": ["expresionismo", "expresionista", "pintura", "tecnica mixta", "mixed media", "papel", "artesanal", "gestual", "figurativo", "grafito", "carbon", "tinta", "acuarela", "salpicaduras", "terracota", "contemporaneo", "paisaje", "campo", "horizonte"]
         }
       ]
     }
